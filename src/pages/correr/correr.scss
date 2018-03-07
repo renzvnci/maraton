@@ -1,0 +1,97 @@
+page-correr {
+
+    .contador{
+        // COLOR
+        color: #FFF;
+        text-align: center;
+        text-transform: uppercase;
+        // FONT
+        font-family: 'Open Sans Semibold';
+        font-weight: normal;
+        font-style: normal;
+        src: url('../assets/fonts/OpenSans-Semibold.ttf');
+        font-style: normal;
+        font-size: 50px;
+        // PADDING
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .img_separador {
+        display: block;
+        margin: auto;
+        width: 50%;
+        // PADDING
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    
+    .contador2{
+        // COLOR
+        color: #FFF;
+        text-align: center;
+        text-transform: uppercase;
+        // FONT
+        font-family: 'Open Sans Semibold';
+        font-weight: normal;
+        font-style: normal;
+        src: url('../assets/fonts/OpenSans-Semibold.ttf');
+        font-style: normal;
+        font-size: 13px;
+        // PADDING
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .reproductor{
+        // COLOR
+        color: #4D4D4D;
+        text-align: center;
+        // FONT
+        font-family: 'Open Sans Regular';
+        font-weight: normal;
+        font-style: normal;
+        src: url('../assets/fonts/OpenSans-Regular.ttf');
+        font-style: normal;
+        font-size: 13px;
+        // PADDING
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    
+    .div_superior {
+        padding-top: 20px;
+        background: #0099A8;
+    }
+    
+    .div_inferior {
+        background: #A3D55D;
+    }
+    
+    .img_logo {
+        display: block;
+        margin: auto;
+        // PADDING
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .img_crono {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+        
+    .img_reproductor {
+        display: block;
+        margin: auto;
+        // PADDING
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    ion-content{
+        overflow: hidden;
+    }
+
+
+}
+

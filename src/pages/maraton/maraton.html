@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color=verde>
+    <ion-title>Media Maratón</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <!-- Boton 1 -->
+  <ion-list (click)="goPage('InformacionPage',null, false, null)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/maraton_1.png">
+      </ion-avatar>
+      <h2>Información</h2>
+      <p>Fecha, lugar y más</p>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+  <!-- Boton 2 -->
+    <ion-item (click)="goPage('KitPage',null, false, null)">
+      <ion-avatar item-start>
+        <img src="assets/imgs/maraton_2.png">
+      </ion-avatar>
+      <h2>KIT</h2>
+      <p>Entrega de KIT</p>
+    </ion-item>
+  </ion-list>
+  <!-- Boton 3 -->
+  <ion-list (click)="goPage('RecorridoPage',null, false, null)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/maraton_3.png">
+      </ion-avatar>
+      <h2>Recorrido</h2>
+      <p>Mapa de recorrido</p>
+    </ion-item>
+  </ion-list>
+
+  <!-- Boton 4 
+  <ion-list (click)="goPage('InscropcionPage',null, false, null)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/maraton_4.png">
+      </ion-avatar>
+      <h2>Inscripción</h2>
+      <p>Online</p>
+    </ion-item>
+  </ion-list>-->
+
+  <!-- Boton 5 -->
+  <!-- <ion-list (click)="gotoClasificacion()">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/maraton_5.png">
+      </ion-avatar>
+      <h2>Clasificación</h2>
+      <p></p>
+    </ion-item>
+  </ion-list> -->
+
+</ion-content>

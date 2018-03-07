@@ -1,0 +1,8 @@
+{
+  "name": "Maraton",
+  "app_id": "da058bf1",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

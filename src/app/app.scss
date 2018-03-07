@@ -1,0 +1,34 @@
+.alertCustomCss {
+    color: black; 
+    background-color: transparent;
+    button {
+        color: white !important; // button text color
+        background-color: color($colors, azul, base) !important;
+    }
+    .alert-title{
+        color: #0099A8 !important; // button text color
+    }
+    .alert-sub-title{
+        color: black !important; // button text color
+        background-color: color($colors, light, base) !important;
+        
+    }
+    .alert-message {
+        color: black; // text color for confirm alerts
+    }
+    .alert-wrapper {
+        background-color: color($colors, light, base); // bg color of alert content
+    }
+  }
+  .loadingCustomCss{
+      .loading-wrapper{
+          background-color: #0099A8 !important;
+      }
+      .loading-content{
+          color:#fff;
+          font-weight: 500;
+      }
+      .loading-spinner{
+          color: #A3D55D;
+      }
+  }

@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color=rojo>
+    <ion-title>Actividad</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="empty">
+    <ion-card-header class="item-text-wrap">
+      <div padding>No se encuentran actividades registradas.</div>
+    </ion-card-header>
+  </ion-card>
+  <ion-card *ngFor="let item of actividades"(click)="gotoResumen(item.id,item)">
+    <ion-card-header>
+      {{item.fecha}} - {{item.denominacion}}
+    </ion-card-header>
+    <ion-card-content>
+      Tiempo: {{item.tiempo}}
+      <br>Distancia: {{item.distancia}}
+      <br>Calorias quemadas: {{item.calorias}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

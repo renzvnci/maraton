@@ -1,0 +1,26 @@
+<ion-header *ngIf="header">
+  <ion-navbar color=rojo>
+    <ion-title>Resumen</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div id="mapCanvas" ></div>
+  <ion-fab top right edge (click)="verMapa()">
+    <button ion-fab color="rojo">
+        <img src="assets/imgs/icono-red.png" />
+    </button>
+  </ion-fab>
+ <ion-card>
+    <div id="img"></div>
+    <ion-card-header>
+        <b>{{actividad.fecha}} - {{actividad.denominacion}}</b>
+    </ion-card-header>
+    <ion-card-content id="contenido" style="display: none">
+      Tiempo: <b>{{actividad.tiempo}}</b>
+      <br>Distancia: <b>{{actividad.distancia}}</b>
+      <br>Calorias quemadas: <b>{{actividad.calorias}}</b>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button large full color="rojo" (click)="share(actividad)">Compartir</button>
+
+</ion-content>

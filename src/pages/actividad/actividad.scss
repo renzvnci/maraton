@@ -1,0 +1,17 @@
+page-actividad {
+
+    ion-card-header {
+        //background-color: yellow;
+        font-weight: bold;
+        font-family: 'Open Sans Semibold';
+        src: url('../assets/fonts/OpenSans-SemiboldItalic.ttf');
+        font-style: italic;
+    }
+
+    .card { 
+        border-radius : 0px;
+        box-shadow: 0 3px 0px #C1272D;
+        margin-bottom: 5px !important;
+    }
+
+}

@@ -1,0 +1,64 @@
+<ion-content padding class="background">
+  <ion-list style="padding-top:10px;">
+    <ion-item>
+      <ion-label>Correo electrónico</ion-label>
+      <ion-input type="text" [(ngModel)]="formulario.mail" name="correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="formulario.nombre" name="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellidos</ion-label>
+      <ion-input type="text" [(ngModel)]="formulario.apellido" name="apellidos"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="date">
+      <ion-label>dd/mm/aaaa</ion-label>
+      <ion-input type="date" [(ngModel)]="formulario.fechaNacimiento" name="fecha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Peso</ion-label>
+      <ion-input type="number" [(ngModel)]="formulario.peso" name="peso"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Altura</ion-label>
+      <ion-input type="number" [(ngModel)]="formulario.altura" name="altura"></ion-input>
+    </ion-item>
+
+    <!-- Ingresar -->
+    <ion-row>
+      <ion-col style="text-align: center">
+        <button ion-button round outline color="light" (click)="validateForm()">Registro</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-list>
+
+  <!-- Ingresar con clave 
+  <ion-row>
+    <ion-col style="text-align: center">
+      <button ion-button round outline color="light" (click)="goPage('MenuPage', '', true, null)">Ingresar</button>
+    </ion-col>
+    <ion-col style="text-align: center">
+      <button ion-button round outline color="light" (click)="goPage('RegistroPage', '', false, null)"  >Registrarse</button>
+    </ion-col>
+  </ion-row>-->
+
+  <!-- Login con Facebook 
+  <ion-row>
+    <ion-col style="text-align: center">
+      <button ion-button round style="display: inline-block; background-color:rgb(41, 92, 169)">
+        <ion-icon></ion-icon>
+        Ingresar con Facebook
+      </button>
+    </ion-col>
+  </ion-row>-->
+
+  <!-- Logo superior -->
+  <ion-row>
+    <ion-col class="espacios">
+      <img src="assets/imgs/mediamaratonlogo.png" width="145" height="92" alt="" class="imagenes">
+    </ion-col>
+  </ion-row>
+
+</ion-content>
